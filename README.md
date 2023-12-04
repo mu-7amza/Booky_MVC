@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the ASP.NET Core MVC Project! This repository is designed to help you understand the structure and fundamentals of ASP.NET Core MVC using .NET 8.
+Welcome to the ASP.NET Core MVC Project! This repository is designed to help you understand the structure and fundamentals of ASP.NET Core MVC using .NET 7.
 ## Prerequisites
 
 Before you begin, make sure you have the following installed:
@@ -16,14 +16,14 @@ Before you begin, make sure you have the following installed:
 - Integrated Identity Framework and add custom fields to Users
 - Interacted with Razor class library for Identity
 - Integrated Entity Framework with code-first migrations
-- Implemented sessions in ASP.NET Core (.NET 8)
+- Implemented sessions in ASP.NET Core (.NET 7)
 - Implemented View Components and Partial Views in ASP.NET Core
 - Utilized Bootstrap v5 for responsive and modern UI
-- Implemented Authentication and Authorization in ASP.NET Core (.NET 8)
+- Implemented Authentication and Authorization in ASP.NET Core (.NET 7)
 - Enable Google and Facebook Authentication/Login
 - Manage roles using ASP.NET Core Identity
 - Implemented email notifications
-- Utilized TempData in ASP.NET Core (.NET 8)
+- Utilized TempData in ASP.NET Core (.NET 7)
 - Integrated Stripe Payment for online transactions
 - Implemented the Repository Pattern to access the database
 - Seed database migrations automatically
@@ -37,7 +37,7 @@ Before you begin, make sure you have the following installed:
 ## Technologies
 
 - ASP.NET Core MVC
-- .NET 8
+- .NET 7
 - Identity Framework
 - Entity Framework Core
 - Bootstrap v5
