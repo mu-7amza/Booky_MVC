@@ -1,0 +1,21 @@
+# Use .NET 7 SDK
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+WORKDIR /app
+
+# Copy and restore dependencies
+COPY *.sln ./
+COPY BookyWeb/*.csproj BookyWeb/
+COPY Booky.Utility/*.csproj Booky.Utility/
+COPY Booky.DataAcess/*.csproj Booky.DataAcess/
+COPY Booky.Models/*.csproj Booky.Models/
+RUN dotnet restore
+
+# Build the application
+COPY . ./
+RUN dotnet publish -c Release -o /out
+
+# Runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:7.0
+WORKDIR /app
+COPY --from=build /out .
+ENTRYPOINT ["dotnet", "BookyWeb.dll"]
